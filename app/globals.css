@@ -1,0 +1,100 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 16px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(110, 100, 100);
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #000000;
+  color: white;
+}
+
+div.content {
+  margin-left: 301px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+body{
+  margin: 0px;
+  background-color: #000000;
+}
+
+.card {
+  transition: 0.3s;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+
+
+}
+
+img{
+  width: 470px;
+  border-radius: 15px;
+}
+.hide{
+  color: transparent;
+  background-color: transparent;
+  border-radius: 15px;
+  width: 450px;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 10px;
+
+}
+img:hover + .hide{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: black;
+  display: block;
+  color: white;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+h1{
+  color: white;
+}
+
