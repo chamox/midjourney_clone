@@ -13,7 +13,7 @@ export default function Home() {
     const getPhotos = async() => {
       try {
         const response = await
-          fetch("https://www.midjourney.com/_next/data/yd7ox22WUV4R56kef2pzt/showcase/top.json", {
+          fetch("https://www.midjourney.com/_next/data/4EwJhiNhsS7YXQFUwbbMr/showcase/top.json", {
             method: 'GET',
             redirect: 'follow'})
         const info = await response.json()
